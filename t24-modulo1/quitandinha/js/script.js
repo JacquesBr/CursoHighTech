@@ -39,6 +39,7 @@ function listarCesta() {
         let button = document.createElement("button")
         button.innerHTML = "Remover"
         button.classList.add("btn")
+        button.addEventListener("click", remover(i))
         button.classList.add("remover")
 
         div.appendChild(button)
