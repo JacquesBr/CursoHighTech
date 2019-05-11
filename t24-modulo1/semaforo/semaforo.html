@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Semáforo HT</title>
+    <script src="semaforo.js"></script>
+    <link rel="stylesheet" href="semaforo.css">
+</head>
+
+<body>
+
+    <img class="img-semaforo" src="img/apagado.svg" alt="Imagem de um semáforo apagado">
+
+    <form class="form-semaforo">
+        <h1 class="text-center titulo">Semáforo HT</h1>
+
+        <div class="opcao">
+            <label for="vermelho">Vermelho</label>
+            <input type="radio" value="vermelho" name="selecionado" id="vermelho">
+        </div>
+
+        <div class="opcao">
+            <label for="amarelo">Amarelo</label>
+            <input type="radio" value="amarelo" name="selecionado" id="amarelo">
+        </div>
+
+        <div class="opcao">
+            <label for="verde">Verde</label>
+            <input type="radio" value="verde" name="selecionado" id="verde">
+        </div>
+
+        <div class="text-center">
+            <button class="btn" onclick="verificar()" type="button">Verificar</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

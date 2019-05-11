@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quitandinha HT</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body onload="listarCesta()">
+
+    <header>
+        <nav class="navbar">
+            <div>
+                <img src="img/quitandinha.svg" alt="Logo da Quitandinha">
+                <img src="img/loupe.svg" alt="Ícone de lupa">
+            </div>
+            <div>
+                <img src="img/avatar.svg" alt="Ícone de usuário">
+                <a href="cestinha.html">
+                    <img src="img/basket.svg" alt="Ícone de cesta de compras">
+                </a>
+                <span id="quantidadeCesta"></span>
+            </div>
+        </nav>
+        <section class="topo">
+            <div>
+                <img src="img/shop.svg" alt="Ícone da quitandinha">
+                <h1>Quitandinha</h1>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="produtos">
+            <div onclick="adicionarCesta('Banana')">
+                <img src="img/banana.jpg" alt="Banana">
+            </div>
+            <div onclick="adicionarCesta('Kiwi')">
+                <img src="img/kiwi.jpg" alt="Kiwi">
+            </div>
+            <div onclick="adicionarCesta('Pitaya')">
+                <img src="img/pitaya.jpg" alt="Pitaya">
+            </div>
+            <div onclick="adicionarCesta('Laranja')">
+                <img src="img/laranja.jpg" alt="Laranja">
+            </div>
+            <div onclick="adicionarCesta('Maça')">
+                <img src="img/maca.jpg" alt="Maca">
+            </div>
+            <div onclick="adicionarCesta('Tomate')">
+                <img src="img/tomate.jpg" alt="Tomate">
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
