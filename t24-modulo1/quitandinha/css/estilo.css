@@ -95,6 +95,7 @@
     justify-content: space-between;
     font-size: 20px;
     margin-bottom: 20px;
+    /* animation: remove-cesta 2s forwards; */
 }
 
 section {
@@ -108,4 +109,18 @@ button {
     padding: 10px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, .3);
     cursor: grab;
+}
+
+
+/* ANIMACAO */
+
+@keyframes remove-cesta {
+    from {
+        opacity: 1;
+        margin-left: 15%;
+    }
+    to {
+        opacity: 0;
+        margin-left: -300px;
+    }
 }

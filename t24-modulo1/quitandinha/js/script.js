@@ -4,7 +4,7 @@ let quantidadeCesta
 function adicionarCesta(produto) {
     cesta.push(produto)
 
-    alert("Sua cesta contém: " + cesta.toString())
+    // alert("Sua cesta contém: " + cesta.toString())
     localStorage.setItem("cesta", JSON.stringify(cesta))
     carregarCesta()
 }
@@ -42,7 +42,7 @@ function listarCesta() {
 
         let template = document.createElement("template")
         template.innerHTML =
-            `<div class="item-cesta">
+            `<div class="item-cesta" id="item-${i}" >
             <span>${cesta[i]}</span>
             <button onclick="remover(${i})">Remover</button>
         </div>
@@ -53,5 +53,5 @@ function listarCesta() {
 
 
 function remover(index) {
-    alert("Removendo o cara da posisao:" + index)
+    document.getElementById(`item-${index}`).style.animation = "remove-cesta 2s"
 }
